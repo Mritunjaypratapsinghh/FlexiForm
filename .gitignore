@@ -35,3 +35,4 @@ build/
 # Ignore secret and compiled files
 .env
 target/
+application-dev.properties
