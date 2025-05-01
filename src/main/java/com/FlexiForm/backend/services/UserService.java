@@ -51,5 +51,10 @@ public class UserService implements UserDetailsService {
     }
 
 
+    public UserDTO getAllUser(Long userId) {
+        UserEntity userEntity = userRepository.findById(userId).orElse(null);
+        return modelMapper.map(userEntity, UserDTO.class);
 
+        
+    }
 }

@@ -19,7 +19,7 @@ public class WebSecurityConfig {
 
 
     private static final String[] publicRoutes = {
-            "/error", "/auth/**"
+            "/error", "/auth/**", "/user/**"
     };
 
     @Bean
